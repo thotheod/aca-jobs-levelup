@@ -23,7 +23,7 @@ The easiest way to deploy ACA-LZA -- without any sample applications - is descri
 
 2.  Click on the "Deploy to Azure" button
 
-![A screenshot of a computer Description automatically generated](./media/image1.png =300x250)
+![A screenshot of a computer Description automatically generated](./media/image1.png =100x50)
 
 3.  Select the correct subscription (one that you are owner), and in the first step of the deployment wizard enter
 
