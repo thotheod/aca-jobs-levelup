@@ -1,3 +1,4 @@
+## Prerequisites: 
 -   You need to be owner of the Azure subscription you will use to deploy the ACA LZA.
 
 -   The following resource providers should be     [registered](https://learn.microsoft.com/el-gr/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider)
@@ -11,7 +12,7 @@
 
     -   Microsoft.KeyVault
 
-Pre-work:
+## Pre-work:
 
 The deployment of a full blown ACA-LZA might take well above 30 minutes.
 During the lab, it would be great if you have already an ACA LZA deployed, so that we can focus on how you deploy Azure Container Jobs, and lose no time on deploying the LZA.
