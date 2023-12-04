@@ -17,21 +17,21 @@
 The deployment of a full blown ACA-LZA might take well above 30 minutes.
 During the lab, it would be great if you have already an ACA LZA deployed, so that we can focus on how you deploy Azure Container Jobs, and lose no time on deploying the LZA.
 
-The easiest way to deploy ACA-LZA -- without any sample applications - is described below:
+The easiest way to deploy ACA-LZA - without any sample applications - is described below:
 
-1.  Head to **aka.ms/aca-lza,** and then navigate to     **scenarios/aca-internal.**
+1.  Head to **aka.ms/aca-lza,** and then navigate to **scenarios/aca-internal.** (or just [click here](https://github.com/Azure/aca-landing-zone-accelerator/tree/main/scenarios/aca-internal/bicep))
 
 2.  Click on the "Deploy to Azure" button
 
 ![A screenshot of a computer Description automatically generated](./media/image1.png)
 
-3.  Select the correct subscription (one that you are owner), and in the first step of the deployment wizard enter
+3.  Select the correct subscription (one that you are owner), and in the first step of the deployment wizard enter:
 
-    a.  A workload name that you like
+    a.  A workload name that you like (less than 10 caharacters long)
 
     b.  Environment name (i.e. dev)
 
-    c.  Deploy Zone redundant Resources: false (for cost reasons, and reduced deployment times)
+    c.  Deploy Zone redundant Resources: false (for cost reasons, and reduced deployment time)
 
     d.  Deploy Azure Policies: true
 
@@ -39,7 +39,7 @@ The easiest way to deploy ACA-LZA -- without any sample applications - is descri
 
 > ![A screenshot of a computer Description automatically generated](./media/image2.png)
 
-4.  Next step, "Network Settings". Keep the default values, is OK for testing purposes
+4.  Next step, "Network Settings". Keep the default values, they are OK for testing purposes
 
 5.  "Jump-Box settings (VM)" step: Select VM OS type" \> Linux. Keep the default VM Size is OK for the testing purposes. Add a strong password for the azureuser
 
@@ -47,7 +47,7 @@ The easiest way to deploy ACA-LZA -- without any sample applications - is descri
 
 6.  **"Deployment Feature Flags"** step: the most important flags to set are: 
 
-    a.  Deploy Bastion**:** true (So that you can have access to the Jump-box)
+    a.  Deploy Bastion: true (So that you can have access to the Jump-box)
 
     b.  Deploy Hello World Sample: false (We do not need to deploy a sample app and application gateway. We will deploy the Jobs Sample app as a lab during the training.
 
