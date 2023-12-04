@@ -23,7 +23,7 @@ The easiest way to deploy ACA-LZA -- without any sample applications - is descri
 
 2.  Click on the "Deploy to Azure" button
 
-![A screenshot of a computer Description automatically generated](./media/image1.png){: width="400" height="300"}
+![A screenshot of a computer Description automatically generated](./media/image1.png)
 
 3.  Select the correct subscription (one that you are owner), and in the first step of the deployment wizard enter
 
@@ -37,24 +37,31 @@ The easiest way to deploy ACA-LZA -- without any sample applications - is descri
 
     e.  Everything else default or void values
 
-> ![A screenshot of a computer Description automatically generated](./media/image2.png){: width="400" height="300"}
+> ![A screenshot of a computer Description automatically generated](./media/image2.png)
 
 4.  Next step, "Network Settings". Keep the default values, is OK for testing purposes
 
 5.  "Jump-Box settings (VM)" step: Select VM OS type" \> Linux. Keep the default VM Size is OK for the testing purposes. Add a strong password for the azureuser
 
-![A screenshot of a computer Description automatically generated](./media/image3.png){ width="400" height="300"}
+![A screenshot of a computer Description automatically generated](./media/image3.png)
 
 6.  **"Deployment Feature Flags"** step: the most important flags to set are: 
+
     a.  Deploy Bastion**:** true (So that you can have access to the Jump-box)
+
     b.  Deploy Hello World Sample: false (We do not need to deploy a sample app and application gateway. We will deploy the Jobs Sample app as a lab during the training.
+
     c.  For Cost reasons and reduced deployment time we also recommend the following settings:
+
         i.  Deploy Redis cache: false
+
         ii. Enable Application Insights: false
+
         iii. Enable Dapr Instrumentation: false
+
         iv. Enable DDoS Protection: Disabled
 
-![A screenshot of a computer Description automatically generated](./media/image4.png){ width="400" height="300"}
+![A screenshot of a computer Description automatically generated](./media/image4.png)
 
 
 7.  Then click on "Review and Create"
